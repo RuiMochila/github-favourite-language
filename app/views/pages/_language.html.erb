@@ -1,0 +1,10 @@
+<% language ||= nil %>
+<% if language %>
+  <% if language.eql?("Not Found") %>
+    <p><%= "Can't determine the user's favourite language" %></p>
+  <% else %>
+    <p><%= "This User's favourite language is #{language}" %></p>
+  <% end %>
+<% else %>
+  <p>Guessing...</p>
+<% end %>

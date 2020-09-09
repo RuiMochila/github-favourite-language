@@ -1,0 +1,8 @@
+<h1>Guess Favourite Language</h1>
+
+<%= form_with url: "/languages" do |form| %>
+ <%= form.text_field :username, required: true %>
+ <%= form.submit "Guess" %>
+<% end %>
+
+<div id="favourite_language" />
